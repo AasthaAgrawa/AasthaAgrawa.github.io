@@ -1,0 +1,95 @@
+body {
+    font-family:'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    background-color: #EFEBCE; 
+    color: #333333;
+    margin: 0;
+    padding: 20px;
+    line-height: 1.8;
+}
+
+h1 {
+    font-size: 2.5em;
+    background-color: #EDF7D2;
+    color: #51355A; 
+    text-transform: uppercase;
+    text-align: center;
+    font-family: "Sigmar", sans-serif;
+    font-weight: 400;
+    font-style: normal;
+}
+
+h2, h3, h4 {
+    color: #51355A; 
+    background-color: #EDF7D2;
+}
+
+p {
+    font-size: 1.1em;
+    line-height: 1.8;
+}
+
+ol, ul {
+    padding-left: 20px;
+}
+
+li {
+    margin-bottom: 10px;
+}
+
+img {
+    max-width: 100%;
+    height: auto;
+    border-radius: 8px; 
+}
+
+figure img {
+    width: 100%;
+    height: auto;
+    transition: transform 0.3s ease-in-out;
+}
+
+figure img:hover {
+    transform: scale(1.05);
+}
+
+a {
+    color: #0073e6;
+    text-decoration: dashed;
+    font-weight: bold;
+}
+
+a:hover {
+    color: #ff6600; 
+    text-decoration: underline;
+}
+
+a:visited {
+    color: #6a0dad; 
+}
+
+footer {
+    text-align: center;
+    font-size: 0.9em;
+    padding: 10px;
+    background-color: #937666;
+    color: #000000;
+    border-radius: 5px;
+}
+
+main {
+    padding: 20px;
+    max-width: 800px;
+    margin: auto;
+    background: white;
+    border-radius: 8px;
+}
+
+figcaption {
+    font-size: 0.9em;
+    color: #666;
+    text-align: center;
+}
+
+h2, h3 {
+    text-transform: capitalize;
+}
