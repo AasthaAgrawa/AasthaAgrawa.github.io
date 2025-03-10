@@ -65,6 +65,8 @@ h2.logo{
     width: 6rem;
     height: 6rem;
     border-radius: 50%;
+    display: grid;
+    align-items: center;
 }
 .wrapper{
     border:0px black solid;
