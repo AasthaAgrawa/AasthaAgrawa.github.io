@@ -1,0 +1,9 @@
+p {
+    font-family:Verdana, Geneva, Tahoma, sans-serif;
+    color:cadetblue
+}
+
+p#about {
+    font-family: fantasy;
+    color:olive
+}
