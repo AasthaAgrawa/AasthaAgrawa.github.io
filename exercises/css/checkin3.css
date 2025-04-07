@@ -1,0 +1,69 @@
+.wrapper{
+    border: 1px solid red;
+    display: grid;
+    grid-template-rows: 100px auto auto;
+    grid-template-columns: 1fr 1fr 1fr 1fr 1fr 1fr;
+}
+header{
+    background-color: blue;
+    color: white;
+    text-align: center;
+    grid-row-start: 1;
+    grid-row-end: 2;
+    grid-column-start: 1;
+    grid-column-end: 7;
+}
+
+.box-one {
+    background-color: black;
+    color: white;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    grid-row-start: 2;
+    grid-row-end: 3;
+    grid-column-start: 1;
+    grid-column-end: 4;
+}
+.box-two {
+    grid-row-start: 2;
+    grid-row-end: 3;
+    grid-column-start: 4;
+    grid-column-end: 7;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+.box-three{
+    background-color: lightblue;
+    color: black;
+    grid-row-start: 3;
+    grid-row-end: 4;
+    grid-column-start: 1;
+    grid-column-end: 3;
+    padding: 1rem;
+}
+.box-four{
+    grid-row-start: 3;
+    grid-row-end: 4;
+    grid-column-start: 3;
+    grid-column-end: 5;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}  
+.box-five{
+    grid-row-start: 3;
+    grid-row-end: 4;
+    grid-column-start: 5;
+    grid-column-end: 7;
+}  
+#floated{
+    float: right;  
+}
+.image{
+    height: 100px;
+}
+body{
+    background-color: bisque;
+}
