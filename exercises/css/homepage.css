@@ -5,6 +5,7 @@ body {
     font-family: 'Playfair Display', serif;
   }
   
+  /* Navigation */
   .navbar {
     display: flex;
     justify-content: space-between;
@@ -72,20 +73,40 @@ body {
     color: #ffd700;
   }
   
-  /* Projects */
+  /* Projects Section */
   .projects-container {
     display: flex;
-    justify-content: center;
-    gap: 3rem;
+    flex-direction: column;
+    align-items: center;
     padding: 4rem 2rem;
     background-color: #1a1919;
+    gap: 3rem;
+  }
+  
+  /* Section heading */
+  .section-heading {
+    text-align: center;
+    font-size: 2rem;
+    font-weight: 700;
+    color: #f9f3e8;
+    margin-bottom: 1rem;
+  }
+  
+  /* Project card layout */
+  .project-grid {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 3rem;
+    width: 100%;
+    max-width: 1200px;
   }
   
   .project-card {
     background-color: #f2e7d8;
     padding: 2rem;
     width: 320px;
-    border-radius: 4px;
+    border-radius: 8px;
     text-align: center;
     box-shadow: 0 4px 10px rgba(0, 0, 0, 0.15);
   }
@@ -160,14 +181,26 @@ body {
     transform: scale(1.1);
   }
   
-  /* Gallery */
+  /* Gallery Section for graphic designs */
+  .gallery-section {
+    padding: 4rem 2rem;
+    background-color: #1a1919;
+    text-align: center;
+  }
+  
   .gallery-container {
     display: grid;
     grid-template-columns: repeat(3, 1fr);
     gap: 2rem;
-    padding: 4rem 2rem;
-    background-color: #1a1919;
     justify-items: center;
+    margin-top: 2rem;
+  }
+  
+  .section-heading {
+    font-size: 2rem;
+    font-weight: 700;
+    color: #f9f3e8;
+    margin-bottom: 1rem;
   }
   
   .gallery-item {
@@ -252,32 +285,35 @@ body {
     max-width: 320px;
     border-radius: 4px;
   }
-
+  
   /* Resume Page Link Styles */
-    .resume-container a {
-        color: #ffd700; 
-        text-decoration: none;
-    }
-
-    .resume-container a:hover {
-        color: #f2e7d8; 
-        text-decoration: underline;
-    }
-
-    .resume-container a:visited {
-        color: #94e2d5; 
-    }
-
-    .resume-container a:active {
-        color: #dda0dd; 
-    }
-
-  /* Responsive */
+  .resume-container a {
+    color: #ffd700;
+    text-decoration: none;
+  }
+  
+  .resume-container a:hover {
+    color: #f2e7d8;
+    text-decoration: underline;
+  }
+  
+  .resume-container a:visited {
+    color: #94e2d5;
+  }
+  
+  .resume-container a:active {
+    color: #dda0dd;
+  }
+  
+  /* Responsive Design */
   @media screen and (max-width: 768px) {
     .projects-container {
+      padding: 2rem 1rem;
+    }
+  
+    .project-grid {
       flex-direction: column;
       align-items: center;
-      padding: 2rem 1rem;
     }
   
     .project-card {
